@@ -21,7 +21,7 @@ namespace DSA_Activity_53_Estrada_JanLaurence
                 int i = 0;
                 while (i != 7)
                 {
-                    Console.WriteLine("===================");
+                    Console.WriteLine();
 
                     Console.WriteLine("Choose what you want to do?");
 
@@ -96,11 +96,10 @@ namespace DSA_Activity_53_Estrada_JanLaurence
                             {
                                 foreach (var item in jobs)
                                 {
-                                    Console.Write(item + " ");
+                                    Console.Write(item + ", ");
                                 }
                             }
                             Console.WriteLine();
-
 
                             break;
                         case 6:
@@ -110,8 +109,9 @@ namespace DSA_Activity_53_Estrada_JanLaurence
                             break;
                         case 7:
                             Console.WriteLine("You Have Left The Jobs Program...");
-                            break;
-
+                            return;
+                        default:
+                            return;    
                     }
 
                 }
